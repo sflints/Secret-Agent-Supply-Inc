@@ -64,6 +64,9 @@ nav ul {
   justify-content: space-between;
   padding: 0.75rem 0;
 }
+.port-nav {
+  display: none;
+}
 .item-image img {
   max-width: 9rem;
 }
@@ -111,4 +114,64 @@ footer {
   background-color: black;
   color: white;
   margin-top: 4rem;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    font-family: Helvetica;
+    font-size: .77rem;
+  }
+  .main-section {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+  }
+  .message {
+    padding: 1rem 3rem;
+    width: auto;
+    position: relative;
+    top: 9rem;
+    background-color: black;
+    color: white;
+  }
+  .message h4 {
+    font-size: 0.77rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  .message h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 2rem;
+    margin: 0.25rem 0;
+  }
+  .port-nav {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  }
+  nav ul {
+    display: none;
+  }
+  .item.specs {
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: center;
+  }
+.info, .important-info {
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0.5em auto;
+  }
+  .item.pen {
+    width: 90%;
+    margin: auto;
+  }
+  .item.watch {
+    display: none;
+  }
 }
